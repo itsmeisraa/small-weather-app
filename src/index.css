@@ -49,3 +49,77 @@ body{
 .searchbar button img{
   width: 16px;
 }
+
+/* Weather section */
+.weather {
+  margin-top: 20px;
+}
+
+.weather-icon {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.temp {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.city {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Weather details (humidity & wind) */
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  justify-content: center;
+}
+
+.col img {
+  width: 30px;
+  height: 30px;
+}
+
+.humidity,
+.wind {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+/* Error message */
+.error {
+  color: #ff4d4d;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Responsive tweaks */
+@media (max-width: 500px) {
+  .temp {
+    font-size: 36px;
+  }
+
+  .city {
+    font-size: 22px;
+  }
+
+  .col img {
+    width: 24px;
+    height: 24px;
+  }
+}

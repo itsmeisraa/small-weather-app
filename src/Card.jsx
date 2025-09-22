@@ -47,7 +47,7 @@ function Card() {
           onChange={(e) => setCity(e.target.value)}
         />
         <button onClick={fetchWeather}>
-          <img src="/src/assets/search.png" alt="search" />
+          <img src="/search.png" alt="search" />
         </button>
       </div>
 
@@ -71,7 +71,7 @@ function Card() {
               </div>
             </div>
             <div className="col">
-              <img src="src/assets/wind.png" alt="wind" />
+              <img src="/wind.png" alt="wind" />
               <div>
                 <p className="wind">{weather.wind} km/h</p>
                 <p>Wind Speed</p>

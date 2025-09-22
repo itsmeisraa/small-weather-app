@@ -5,7 +5,7 @@ function Card() {
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState("");
 
-  const API_KEY = "005f3ff8a2afdf5983360d80dd3701f4"; // 🔑 Replace with your real API key
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
   // Function to fetch weather data
   const fetchWeather = async () => {
